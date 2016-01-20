@@ -20,5 +20,11 @@ public class TestController {
 	public TestModel getTest() {
 		return testService.getTest();
 	}
+	
+	@RequestMapping(value = "/admin", method = RequestMethod.GET)
+	@ResponseBody
+	public TestModel admin() {
+		return new TestModel("test");
+	}
 
 }
