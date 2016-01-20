@@ -20,6 +20,7 @@
 			authentication-failure-handler-ref="customFailureHandler" />
 		<logout />
 		<sec:csrf disabled="true" />
+		<sec:http-basic/>
 	</http>
 
 	<!-- Connect the custom authentication success handler -->
